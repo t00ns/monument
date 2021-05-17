@@ -107,7 +107,8 @@ h1 {
 h2 {
     color: #1F2448;
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 1.15;
+    font-weight: 500;
 }
 
 h3 {
@@ -116,7 +117,12 @@ h3 {
     line-height: 1.25;
 }
 
-
+p {
+    color: #F8F8F8;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+}
 
 .products h1 {
     margin: 50px 0 64px 0;
@@ -128,15 +134,76 @@ h3 {
     color: #DEF100;
 }
 
-.products .wrapper {
+.products .wrapper,
+.products .mini-wrapper {
     min-width: 1132px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
+
+/* for products page */
+
+.products h2,
+.info h2 {
+    color: #DEF100;
+}
+
+.products h2 {
+    text-align: center; 
+    padding: 150px 0 15px 0;
+}
+
+.product-info {
+    display: flex;
+}
+
+.product-info .info {
+    width: 500px;
+    display: block;
+    padding: 0 10px 0 50px;
+}
+
+.product-info p {
+    padding: 10px 0 25px 0;
+}
+
+.qty {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    border: none;
+    background: none;
+    font-size: 24px;
+    font-family: "Faune";
+    color: #F8F8F8;
+    text-align: right;
+    height: 50px;
+    width: 75px;
+    margin: 0 15px;
+}
+
+.arrow-left, 
+.arrow-right {
+    width: 30px;
+    padding: 175px 25px;
+}
+
+.arrow-left img {
+    transform: rotate(180deg);
+}
+
+/* end of for products page */
+
+
 .products div.product {
-    padding: 25px 50px 75px 50px;
+    padding: 25px 32px 75px 32px;
+    margin: 0 auto;
 }
 
 .products div.product img {
